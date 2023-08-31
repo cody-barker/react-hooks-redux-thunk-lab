@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchCats } from "./catsSlice"
+import CatList from './CatList'
 
 function Cats() {
   const catPics = useSelector((state) => state.entities)

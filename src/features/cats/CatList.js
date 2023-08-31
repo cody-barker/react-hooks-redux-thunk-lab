@@ -1,12 +1,11 @@
 function CatList({ catPics }) {
 
-    const catPicComps = catPics.map((pic) => {
-        <img src=`${pic.url}` alt="cat"/>
-    })
-
     return(
-        {catPicComps}
-    )
+        <div>
+            {catPics.map((pic) => {
+                <img src={pic.url} alt="cat" />
+            })}
+        </div>>)
 
 }
 
