@@ -3,9 +3,9 @@ function CatList({ catPics }) {
     return(
         <div>
             {catPics.map((pic) => {
-                <img src={pic.url} alt="cat" />
+                return <img key={pic.id} src={pic.url} alt="cat" />
             })}
-        </div>>)
+        </div>)
 
 }
 
